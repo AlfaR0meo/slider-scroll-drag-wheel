@@ -203,6 +203,11 @@ time {
   user-select: none;
   pointer-events: none;
 }
+@media (any-hover: none) {
+  .slider__item > img {
+    pointer-events: auto;
+  }
+}
 @media (max-width: 767px) {
   .slider__item {
     flex: 0 0 66%;
