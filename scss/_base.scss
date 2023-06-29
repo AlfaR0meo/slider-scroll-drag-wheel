@@ -1,0 +1,43 @@
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■ */
+html, body {
+    height: 100%;
+}
+body {
+    font-family: var(--ff-body, sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+
+    @supports (-webkit-tap-highlight-color: transparent) {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &.scroll-lock {
+        overflow: hidden;
+    }
+}
+.page-wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+.container {
+    max-width: 1000px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    
+    &--xs {
+        max-width: 320px;
+    }
+    &--sm {
+        max-width: 500px;
+    }
+    &--md {
+        max-width: 800px;
+    }
+    &--lg {
+        max-width: 1200px;
+    }
+}
+.none, [none] {
+    display: none !important;
+}
